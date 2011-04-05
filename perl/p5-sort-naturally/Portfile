@@ -1,0 +1,20 @@
+# $Id$
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.setup         Sort-Naturally 1.02
+revision        1
+maintainers         jason.stajich
+categories	    perl
+description         Perl extension to sort lexically, but sort numeral parts numerically
+
+long_description    ${description}
+
+platforms           darwin
+
+checksums           md5 a173f3f8f519ebae6e5e578e843f6e1c \
+                    sha1 da7b21e222c8c0e8f9a8cf5587410cc57a836f31 \
+		    rmd160 a1ba471cc0349b55c3119c9a65550e8f78745367
+
+supported_archs noarch
