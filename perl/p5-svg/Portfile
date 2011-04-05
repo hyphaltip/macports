@@ -1,0 +1,22 @@
+# $Id$
+
+PortSystem      1.0
+PortGroup       perl5 1.0
+
+revision        1
+perl5.setup     SVG 2.50
+maintainers     jason.stajich
+categories-append   perl
+platforms       darwin
+description    Perl extension for generating Scalable Vector Graphics (SVG) documents
+
+long_description ${description}
+
+
+checksums           md5     eb98588ae85277cd7769bce6ba3bc8f9 \
+                    sha1    c698e94ac2673f734b24ed56142e994ad350f440 \
+                    rmd160 f067bc56d4dfa4840d8f1a2e8f1911fa03edda0f 
+
+
+supported_archs noarch
+
