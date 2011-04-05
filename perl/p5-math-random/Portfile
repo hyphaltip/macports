@@ -1,0 +1,22 @@
+# $Id$
+
+PortSystem      1.0
+PortGroup       perl5 1.0
+
+revision        1
+perl5.setup     Math-Random 0.71
+maintainers     jason.stajich
+categories-append   math perl
+platforms       darwin
+description     Perl extension for Random Number Generators
+
+long_description \
+                ${description}
+
+
+checksums           md5     55d7579c670ecd180f71fd157a2d2070 \
+                    sha1    b5a233d5d14328fb308dc56534267d9661f6d605 \
+                    rmd160 3c42242ea174bb93f22fc63c1c3b80108ab4f1dd 
+
+supported_archs noarch
+
