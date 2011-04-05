@@ -1,0 +1,21 @@
+# $Id$
+
+PortSystem      1.0
+PortGroup       perl5 1.0
+
+revision        1
+perl5.setup     SVG-Graph 0.02
+maintainers     jason.stajich
+categories-append   perl
+platforms       darwin
+description    Perl extension for Visualize your data in Scalable Vector Graphics (SVG) format
+
+long_description ${description}
+
+
+checksums           md5     e922f0b323056ecf306eb8085db283f5 \
+                    sha1    718ba2b521516fe75aefcd1cc9bdaec97f599aef \
+                    rmd160 6ef1aafb1422cd1ca7837a8320ae72f583d27bfe 
+
+supported_archs noarch
+
