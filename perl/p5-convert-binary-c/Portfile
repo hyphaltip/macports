@@ -7,7 +7,7 @@ perl5.setup         Convert-Binary-C 0.74
 revision        1
 maintainers         jason.stajich
 categories	    perl
-description         Binary Data Conversion using C Types
+description         Perl extension for Binary Data Conversion using C Types
 
 long_description    ${description}
 
