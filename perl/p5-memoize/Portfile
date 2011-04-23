@@ -1,0 +1,20 @@
+# $Id$
+
+PortSystem      1.0
+PortGroup       perl5 1.0
+
+revision        1
+perl5.setup     Memoize 1.02
+maintainers     jason.stajich
+categories-append   perl
+platforms       darwin
+description    Perl extension to make functions faster by trading space for time 
+
+long_description ${description}
+
+checksums           md5		ce26dedbc9058490f215106ddbed561d \
+                    sha1	e737c7b8be4fedf3849298efd16e6aab35bd4579 \
+                    rmd160	ed9cfbbd13c3ebef97bf4a14dd4b380dd71cd9eb	
+
+supported_archs noarch
+
