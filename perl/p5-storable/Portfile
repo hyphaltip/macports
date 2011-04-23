@@ -1,0 +1,20 @@
+# $Id$
+
+PortSystem      1.0
+PortGroup       perl5 1.0
+
+revision        1
+perl5.setup     Storable 2.25
+maintainers     jason.stajich
+categories-append   perl
+platforms       darwin
+description    Perl extension for persistence of Perl data structures 
+
+long_description ${description}
+
+checksums           md5		2aca812fd3d88791a1dc0ed497afb8c6 \
+                    rmd160 905931265ce03ec6b81327b290695a3e3cf8e4bb \
+                    sha1 1c7335ccf8d285fd5fe764070a8356d6a29242e5	
+
+supported_archs noarch
+
