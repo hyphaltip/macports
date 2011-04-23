@@ -1,0 +1,50 @@
+# $Id$
+
+PortSystem      1.0
+PortGroup       perl5 1.0
+
+revision        1
+perl5.setup     BioPerl 1.6.900 Bio/CJFIELDS/
+maintainers     jason.stajich
+categories-append   perl
+platforms       darwin
+description   Perl Modules for Biology 
+
+long_description ${description}
+
+checksums           md5		6704531a2b44efb09c00bbdd22371e8a \
+                    sha1	849a33d33e281e7b5cd885b433db41c693420077 \
+                    rmd160	a23c6528a9501d2b0d567fae4c259f210a9bd47d
+
+supported_archs noarch
+
+depends_lib-append	port:p5-algorithm-munkres port:p5-convert-binary-c\
+			port:p5-math-random port:p5-gd-svg port:p5-postscript \
+			port:p5-sort-naturally port:p5-svg port:p5-svg-graph \
+			port:p5-archive-tar port:p5-array-compare port:p5-io-compress \
+			port:p5-dbi port:p5-data-stag port:p5-html-parser \
+			port:p5-html-parser port:p5-io-string port:p5-graph \
+			port:p5-memoize port:p5-module-build port:p5-set-scalar \
+			port:p5-storable port:p5-test-warn port:p5-tie-cacher \
+			port:p5-spreadsheet-writeexcel port:p5-spreadsheet-parseexcel \
+			port:p5-test-simple port:p5-time-hires port:p5-test-exception \
+			port:p5-tree-dag_node port:p5-www-mechanize port:p5-uri \
+			port:p5-xml-dom port:p5-xml-dom-xpath port:p5-xml-libxml \
+			port:p5-xml-parser port:p5-xml-sax port:p5-xml-sax-writer \
+			port:p5-xml-twig port:p5-xml-writer port:expat port:p5-libwww-perl
+
+configure.cmd       ${perl5.bin}
+configure.pre_args  Build.PL
+configure.env-append PREFIX=${prefix}
+configure.args      'Build Build' installdirs=vendor
+
+build.cmd           ${perl5.bin}
+build.pre_args      Build
+build.args          build
+
+test.pre_args       Build
+
+destroot.cmd        ${perl5.bin}
+destroot.pre_args   Build
+destroot.args       install
+destroot.destdir    destdir=${destroot}
