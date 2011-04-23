@@ -1,0 +1,20 @@
+# $Id$
+
+PortSystem      1.0
+PortGroup       perl5 1.0
+
+revision        1
+perl5.setup     Tie-Cacher 0.09
+maintainers     jason.stajich
+categories-append   perl
+platforms       darwin
+description    Perl extension for Cache a (sub)set of key/value pairs. Tie and OO interface.
+
+long_description ${description}
+
+checksums           md5		ef6b5ead22f10731ae007a921342c959 \
+                    rmd160 	2ee3a9f6b9b5800e1b8bb6a4dcc2231d318a56bc \
+                    sha1	fea3a09f7b1ccb298cd866631818033339fde349 
+
+supported_archs noarch
+
