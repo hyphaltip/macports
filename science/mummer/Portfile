@@ -1,0 +1,19 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# $Id$
+
+PortSystem          1.0
+
+name                mummer
+version             3.22
+categories          science
+maintainers         bioperl.org:jason
+description         MUMmer is a system for rapidly aligning entire genome
+long_description    MUMmer is a system for rapidly aligning entire genome using suffix trees.
+
+homepage            http://mummer.sourceforge.net/
+platforms           darwin
+master_sites        sourceforge:mummer
+
+checksums           md5 2cda5e6852828913d4a0af9f0fe9e9d8 \
+                    sha1 c763649fa12b3bdf4598bde4f292f9460bf2d47c \
+                    rmd160 f3c20f8458318dcf3251fb68bfd54c9513bf09ae

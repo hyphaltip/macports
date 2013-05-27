@@ -1,0 +1,20 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# $Id$
+
+PortSystem          1.0
+
+name                cndtools
+version             2010.10.11
+categories          science
+maintainers         bioperl.org:jason
+description         cndtools are Colin Dewey's tools including Mercator and Parametric alignments
+long_description    cndtools are Colin Dewey's tools including Mercator and Parametric alignments
+
+homepage            http://www.biostat.wisc.edu/~cdewey/software.html
+platforms           darwin
+master_sites        http://www.biostat.wisc.edu/~cdewey/software/cndsrc-2010.10.11.tar.gz
+
+checksums           md5 71e369f6891e7f33ff7331b14c972dd0 \
+                    sha1 1162d395524c2ed1615966b0728c9b68588f1723 \
+                    rmd160 60520905a68cb1b369757719b931d212137dc837
+

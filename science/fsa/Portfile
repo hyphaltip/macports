@@ -1,0 +1,27 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# $Id$
+
+PortSystem          1.0
+
+name                fsa
+version             1.15.6
+categories          science
+maintainers         bioperl.org:jason
+description         FSA is a probabilistic multiple sequence alignment algorithm
+long_description    FSA is a probabilistic multiple sequence alignment algorithm which \
+uses a "distance-based" approach to aligning homologous protein, RNA or DNA sequences.
+
+
+homepage            http://fsa.sourceforge.net/
+platforms           darwin
+depends_build       port:exonerate port:mummer
+master_sites        sourceforge:fsa
+
+checksums           md5 9efd710f7bdff8319b32c4636edfbb45 \
+                    sha1 305a99a1f85acc83ddd687206d1e5816a709a779 \
+                    rmd160 1b6e9ebf848023a4a0e13421860a3b3b9a026202
+
+
+configure.args      --with-mummer yes \
+                    --with-exonerate yes \
+                    --enable-intel64
