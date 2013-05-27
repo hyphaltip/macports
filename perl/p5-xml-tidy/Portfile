@@ -1,0 +1,22 @@
+# $Id$
+
+PortSystem      1.0
+PortGroup       perl5 1.0
+
+revision        1
+perl5.setup     XML-Tidy 1.12.B55J2qn
+maintainers     jason.stajich
+categories-append   perl
+platforms       darwin
+description    Perl extension for  tidy indenting of XML documents
+extract.suffix  .tgz
+
+long_description ${description}
+
+
+checksums           md5     a6179a289edbd6ae7dd050b98c87f7dc \
+                    sha1i	9c7688b288169894a969db7e4bdf25c40e129422	\
+                    rmd160	d66397b6a0eb4e58028f6832eecff0fed4a76fc8	
+
+supported_archs noarch
+

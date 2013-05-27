@@ -1,0 +1,34 @@
+# $Id$
+
+PortSystem      1.0
+PortGroup       perl5 1.0
+
+revision        1
+perl5.setup     Bio-Graphics 2.14
+maintainers     jason.stajich
+categories-append   perl
+platforms       darwin
+description   Perl Modules for generating images of Bio::Seq objects 
+long_description ${description}
+
+checksums           md5		8a19807fb3f5c91551066956c17cd933 \
+                    sha1	247c122fed24db166c8be7ba9b1de1392d8d3e6b \
+                    rmd160	50fa9ee12f77840c2f52a39f6f33aea19fa4fa53	
+
+depends_lib-append 	port:p5-gd port:p5-bioperl
+
+configure.cmd       ${perl5.bin}
+configure.pre_args  Build.PL
+configure.env-append PREFIX=${prefix}
+configure.args      'Build Build' installdirs=vendor
+
+build.cmd           ${perl5.bin}
+build.pre_args      Build
+build.args          build
+
+test.pre_args       Build
+
+destroot.cmd        ${perl5.bin}
+destroot.pre_args   Build
+destroot.args       install
+

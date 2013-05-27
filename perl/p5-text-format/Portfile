@@ -1,0 +1,18 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# $Id$
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.branches      5.8 5.10 5.12 5.14 5.16
+perl5.setup         Text-Format 0.58
+revision            1
+platforms           darwin
+license             {Artistic-1 GPL}
+maintainers         openmaintainer
+supported_archs     noarch
+
+description         Various subroutines to format text.
+
+checksums           sha1    8d736cdc004c2be5688517b74f4b594a0d9c6f2d \
+                    rmd160  7e9a9703ec8641f8b594f8c6e4fdffd73acb17c2

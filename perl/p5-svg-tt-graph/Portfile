@@ -1,0 +1,21 @@
+# $Id$
+
+PortSystem      1.0
+PortGroup       perl5 1.0
+
+revision        1
+perl5.setup     SVG-TT-Graph 0.23
+maintainers     jason.stajich
+categories-append   perl
+platforms       darwin
+description    Perl extension for creating data plotting graphs with SVG
+
+long_description ${description}
+
+
+checksums           md5     2cf7439498bba5adedbbf599ceccc509 \
+                    sha1	63fa2905d95bd1f50c2d44e8deb6f0fc671c56e2 \
+                    rmd160	2a83b73083bdef40f1e7ca42ba0e9c58c0bf46cd 
+
+supported_archs noarch
+

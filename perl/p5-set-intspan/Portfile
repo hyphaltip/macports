@@ -1,0 +1,21 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# $Id$
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.branches      5.8 5.10 5.12 5.14 5.16
+perl5.setup         Set-IntSpan 1.19
+revision            1
+platforms           darwin
+license             {Artistic-1 GPL}
+maintainers         openmaintainer
+supported_archs     noarch
+
+description         Manages sets of integers
+
+long_description \
+    This package manages sets of integers
+
+checksums           sha1    bfef262e876144c5fe355277b94144b20e7ddfaa \
+                    rmd160  1b46da5ef90168c600f8874e7633a74aacdc8c3b
